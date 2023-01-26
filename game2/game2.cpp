@@ -100,12 +100,6 @@ bool loadMedia()
 
 	return(true);
 	//Load default surface
-	gKeyPressSurfaces[KEY_PRESS_SURFACE_DEFAULT] = loadSurface("press.bmp");
-	if (gKeyPressSurfaces[KEY_PRESS_SURFACE_DEFAULT] == NULL)
-	{
-		printf("Failed to load default image!\n");
-		success = false;
-	}
 
 	//Load up surface
 	gKeyPressSurfaces[KEY_PRESS_SURFACE_UP] = loadSurface("right.bmp");
